@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokempo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jokempo (Rock-Paper-Scissors) Game</h1>
+    <div id="video-container">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="countdown">3</div>
+    <div id="result">
+        <p>Your move: <span id="player-move">None</span></p>
+        <p>Computer's move: <span id="computer-move">None</span></p>
+        <p>Result: <span id="game-result">None</span></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="script.js"></script>
+</body>
+</html>
