@@ -41,6 +41,12 @@ No geral, o projeto envolve o uso de visão computacional para criar um jogo Jok
 
 [HandPose](https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose)
 
+# Esforços realizados para adaptação
+
+No caso dos links fornecidos para o TensorFlow.js e o modelo handpose, não teve personalizações específicas realizadas nos repositórios padrão. O TensorFlow.js é uma biblioteca de código aberto mantida pelo Google, e o modelo handpose é um dos modelos pré-treinados disponíveis dentro da biblioteca TensorFlow.js.
+
+Portanto, não houve necessidade de realizar esforços de desenvolvimento para adaptar o software padrão utilizado. Esses são softwares amplamente utilizados na comunidade de desenvolvimento de aprendizado de máquina e visão computacional, e podem ser integrados diretamente em projetos sem a necessidade de modificações significativas.
+
 # ❔ Quem utilizará?
 
 🕹️ Jogadores interessados em uma versão interativa e moderna do jogo Jokempo.
