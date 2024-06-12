@@ -1,8 +1,8 @@
-# 🎮 Desenvolvedores - Jokempo 
+# 🎮 Desenvolvedores - JokenPô 
 
 👦🏽 Gabriel Rosa
 
-🧔🏻‍♂️ Felipe Filgueiras
+🧔 Felipe Filgueiras
 
 👦🏻 Felipe Tavares
 
