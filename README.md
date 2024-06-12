@@ -35,7 +35,7 @@ No geral, o projeto envolve o uso de visão computacional para criar um jogo Jok
 
 🎨 O uso dessas tecnologias permite a criação de uma interface de usuário intuitiva, atraente e de fácil navegação, tornando a experiência mais agradável e convidativa.
 
-#Software utilizado: 
+# Software utilizado: 
 
 [TensorFlow.js](https://github.com/tensorflow/tfjs)
 
