@@ -98,7 +98,7 @@ function recognizeGesture(landmarks) {
     if (upFingers === 0) return 'Pedra';
     if (upFingers === 4) return 'Papel'; // Mão aberta (4 dedos pra cima)
     if (upFingers === 2) return 'Tesoura';
-    return 'Movimento Desconhecido';
+    return 'Movimento Desconhecido👽';
 }
 
 function getComputerMove() {
@@ -108,13 +108,13 @@ function getComputerMove() {
 }
 
 function determineWinner(playerMove, computerMove) {
-    if (playerMove === computerMove) return 'Empate';
+    if (playerMove === computerMove) return 'Empate🤝';
     if (playerMove === 'Pedra' && computerMove === 'Tesoura' ||
         playerMove === 'Papel' && computerMove === 'Pedra' ||
         playerMove === 'Tesoura' && computerMove === 'Papel') {
-        return 'Você Ganhou!!';
+        return '🎉Você Ganhou🎉';
     }
-    return 'Você Perdeu =(';
+    return 'Você Perdeu 😭';
 }
 
 main();
