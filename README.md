@@ -35,19 +35,19 @@ No geral, o projeto envolve o uso de visão computacional para criar um jogo Jok
 
 🎨 O uso dessas tecnologias permite a criação de uma interface de usuário intuitiva, atraente e de fácil navegação, tornando a experiência mais agradável e convidativa.
 
-# Software utilizado: 
+# 💻 Software utilizado: 
 
 [TensorFlow.js](https://github.com/tensorflow/tfjs)
 
 [HandPose](https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose)
 
-# Esforços realizados para adaptação
+# 🛠️ Esforços realizados para adaptação
 
 No caso dos links fornecidos para o TensorFlow.js e o modelo handpose, não teve personalizações específicas realizadas nos repositórios padrão. O TensorFlow.js é uma biblioteca de código aberto mantida pelo Google, e o modelo handpose é um dos modelos pré-treinados disponíveis dentro da biblioteca TensorFlow.js.
 
 Portanto, não houve necessidade de realizar esforços de desenvolvimento para adaptar o software padrão utilizado. Esses são softwares amplamente utilizados na comunidade de desenvolvimento de aprendizado de máquina e visão computacional, e podem ser integrados diretamente em projetos sem a necessidade de modificações significativas.
 
-# ❔ Quem utilizará?
+# 👨🏻‍💻 Stakeholders
 
 🕹️ Jogadores interessados em uma versão interativa e moderna do jogo Jokempo.
 
@@ -59,6 +59,7 @@ Pessoas de todas as idades em busca de uma experiência divertida e acessível d
 
 ---------------------------------------------------------------------------------------------------------------------
 
+# Resumo:
 
 No geral, o projeto envolve o uso de visão computacional para criar um jogo Jokempo (pedra, papel, tesoura) com o qual os jogadores podem interagir por meio de gestos detectados por uma webcam. O projeto usa uma combinação de HTML, CSS e JavaScript para criar a interface do usuário e a lógica do jogo, e usa a biblioteca TensorFlow.js e o modelo de gestos para detecção de gestos.
 
