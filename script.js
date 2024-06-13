@@ -39,6 +39,10 @@ async function main() {
 
 function startGame() {
     startButton.disabled = true;
+    startCountdown();
+}
+
+function startCountdown() {
     countdownDisplay.style.display = 'block';
     let countdown = 3;
     countdownDisplay.textContent = countdown;
@@ -48,7 +52,7 @@ function startGame() {
         countdownDisplay.textContent = countdown;
         if (countdown === 0) {
             clearInterval(intervalId);
-            countdownDisplay.style.display = 'Nenhum';
+            countdownDisplay.style.display = 'none';
             detectHandGesture();
         }
     }, 1000);
@@ -57,7 +61,7 @@ function startGame() {
 async function detectHandGesture() {
     const predictions = await model.estimateHands(video);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     if (predictions.length > 0) {
         const landmarks = predictions[0].landmarks;
         drawHand(landmarks);
@@ -69,8 +73,9 @@ async function detectHandGesture() {
         computerMoveDisplay.textContent = computerMove;
         gameResultDisplay.textContent = gameResult;
     }
-    
-    startButton.disabled = false;
+
+    // Reinicia a contagem regressiva para a próxima rodada após um breve atraso
+    setTimeout(startCountdown, 2000); // Pequena pausa antes da próxima rodada
 }
 
 function drawHand(landmarks) {
@@ -117,4 +122,4 @@ function determineWinner(playerMove, computerMove) {
     return 'Você Perdeu 😭';
 }
 
-main(); 
+main();
