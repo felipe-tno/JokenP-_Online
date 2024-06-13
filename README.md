@@ -1,14 +1,14 @@
 # 🎮 Desenvolvedores - JokenPô 
 
-👦🏽 Gabriel Rosa
+👦🏽  Gabriel Rosa
 
-🧔 Felipe Filgueiras
+🧔  Felipe Filgueiras
 
-👦🏻 Felipe Tavares
+👦🏻  Felipe Tavares
 
-👦🏻 Felipe Seda
+👦🏻  Felipe Seda
 
-👩🏻 Giovanna Amaral
+👩🏻  Giovanna Amaral
 
 # 🌐 Objetivo do projeto
 
@@ -24,28 +24,36 @@ No geral, o projeto envolve o uso de visão computacional para criar um jogo Jok
 
 # ⚙️ Desenvolvimento do projeto
 
+Foi utilizado tecnologias web (HTML, CSS, JS, TensorFlow e Handpose) para o desenvolvimento da aplicação.
+Tecnologias essa que permite a criação de uma interface de usuário intuitiva, atraente e de fácil navegação, tornando a experiência mais agradável e convidativa.
+
 - HTML: Para estruturar os elementos da página, incluindo vídeo da webcam, botões e elementos informativos.
 - CSS: Para estilizar a interface do usuário e melhorar a experiência visual do jogo.
 - JavaScript: Para desenvolver a lógica do jogo, incluindo configuração da câmera, detecção de gestos, seleção aleatória dos movimentos do computador e controle do fluxo do jogo.
 - TensorFlow.js: Framework de aprendizado de máquina JavaScript que foi utilizado para carregar e executar o modelo handpose, responsável pela detecção de gestos das mãos na webcam.
 - Handpose Model: Um modelo pré-treinado fornecido pelo TensorFlow.js, especializado em detectar as poses e pontos de referência das mãos em uma imagem ou vídeo.
 
-
-🚀 Utilizando tecnologias web (HTML, CSS, JS e TensorFlow (Handpose) ) para o desenvolvimento da aplicação.
-
-🎨 O uso dessas tecnologias permite a criação de uma interface de usuário intuitiva, atraente e de fácil navegação, tornando a experiência mais agradável e convidativa.
-
 # 💻 Software utilizado: 
 
-[TensorFlow.js](https://github.com/tensorflow/tfjs)
-
-[HandPose](https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose)
+Foi utilizado o software [TensorFlow.js](https://github.com/tensorflow/tfjs) juntamente com o  [HandPose](https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose), que estão disponíveis aqui no GitHub.
 
 # 🛠️ Esforços realizados para adaptação
 
-No caso dos links fornecidos para o TensorFlow.js e o modelo handpose, não teve personalizações específicas realizadas nos repositórios padrão. O TensorFlow.js é uma biblioteca de código aberto mantida pelo Google, e o modelo handpose é um dos modelos pré-treinados disponíveis dentro da biblioteca TensorFlow.js.
+Integração TensorFlow.js: Na página HTML, integramos a biblioteca TensorFlow.js. Isso pode ser conseguido incorporando uma tag <script> que faz referência ao arquivo JavaScript TensorFlow.js, seja de um CDN ou por meio de instalação local no diretório do projeto.
 
-Portanto, não houve necessidade de realizar esforços de desenvolvimento para adaptar o software padrão utilizado. Esses são softwares amplamente utilizados na comunidade de desenvolvimento de aprendizado de máquina e visão computacional, e podem ser integrados diretamente em projetos sem a necessidade de modificações significativas.
+Ao incorporar o modelo Handpose em sua aplicação, você deve iniciar o processo de carregamento. O carregamento de modelos Handpose pré-treinados de forma assíncrona pode ser feito por meio de APIs TensorFlow.js. Normalmente, isso envolve chamar a função tf.loadGraphModel() ou tf.loadLayersModel().
+
+A integração de uma funcionalidade de captura de vídeo ou imagem é necessária na página HTML para que o modelo Handpose reconheça a pose da mão. Isso pode ser feito por meio da API do navegador para acesso à câmera, como a API MediaDevices.
+
+Detecção da postura das mãos: O modelo Handpose pode ser aplicado ao vídeo ou imagem capturada, permitindo assim a identificação da posição das mãos pertencentes a um usuário.
+
+Análise da pose da mão: o modelo Handpose fornece informações que exigem a leitura da postura da mão do usuário, uma tarefa frequentemente associada à inferência do gesto que representa pedra, papel ou tesoura com base no que a mão exibe.
+
+Demonstração do resultado na página HTML: Depois de processar o gesto do usuário, apresente o resultado do jogo na página HTML; isso pode envolver a apresentação de uma mensagem que transmita se o usuário saiu vitorioso, enfrentou a derrota ou empatou.
+
+Aprimorando com CSS: Além disso, considere aproveitar o CSS para aprimorar a apresentação visual e a interatividade da página HTML. Isso abrange vários elementos estilísticos, como design de layout, esquemas de cores, estilos de fonte e possíveis animações que podem ser incorporadas para apelo visual e envolvimento do usuário.
+
+Portanto, o único esforço de desenvolvimento para adaptar o software padrão utilizado foi a integração, carregamento de modelos, captura de entrada, detecção e interpretação de gestos, exibição de resultados e estilização da página.
 
 # 👨🏻‍💻 Stakeholders
 
