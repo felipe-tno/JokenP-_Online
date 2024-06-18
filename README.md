@@ -13,6 +13,8 @@
 # 🌐 Objetivo do projeto
 
 pages: https://fseda.github.io/JokenPo_Online/
+
+
 No geral, o projeto envolve o uso de visão computacional para criar um jogo Jokempo (pedra, papel, tesoura) com o qual os jogadores podem interagir por meio de gestos detectados por uma webcam.
 
 - Desenvolver um jogo interativo de Jokempo (pedra, papel, tesoura) utilizando visão computacional e gestos manuais capturados por uma webcam.
